@@ -1,0 +1,64 @@
+<html>
+<head>
+  <meta content="text/html; charset=ISO-8859-1"
+ http-equiv="content-type">
+  <title></title>
+  <script>
+  function er(){
+  document.getElementById("inf1").innerHTML ="<br>"+"<button onclick=er2()>"+"+"+"</button>"+"&nbsp;"+"<button onclick=er3()>"+"-"+"</button>"+"&nbsp;" +"<button onclick=er4()>"+"*"+"</button>"+"&nbsp;"+"<button onclick=er5()>"+"/"+"</button>"+"<br>"+"<br>"+"<button onclick=er6()>"+"AC"+"</button>";
+}
+function er2(){
+a = document.getElementById("in").value 
+b = document.getElementById("ik").value 
+c = Number(a) + Number(b)
+ document.getElementById("inf2").innerHTML = c
+
+}
+function er3(){
+a = document.getElementById("in").value 
+b = document.getElementById("ik").value 
+c = Number(a) - Number(b)
+ document.getElementById("inf2").innerHTML = c
+
+}
+function er4(){
+a = document.getElementById("in").value 
+b = document.getElementById("ik").value 
+c = Number(a) * Number(b)
+ document.getElementById("inf2").innerHTML = c
+
+}
+function er5(){
+a = document.getElementById("in").value 
+b = document.getElementById("ik").value 
+c = Number(a) / Number(b)
+ document.getElementById("inf2").innerHTML = c
+
+}
+function er6(){
+a = document.getElementById("in").value 
+b = document.getElementById("ik").value 
+a = 0
+b = 0
+document.getElementById("in").value = a
+document.getElementById("ik").value = b
+
+
+}
+
+  </script>
+</head>
+<body>
+<input type="text" value="0" id="in">
+<br>
+<br>
+<button onclick="er()">START</button>
+<br>
+<br>
+<input type="text" value="0" id="ik">
+<div id="inf1" value="0"></div>
+<br>
+<br>
+<div id="inf2" value="0"></div>
+</body>
+</html>
